@@ -26,7 +26,7 @@ public class TestSum {
 	
 
 	private int sum(int i, int j) {
-		return i+j;
+		return Sum.sum(i,  j);
 	}
 
 }
