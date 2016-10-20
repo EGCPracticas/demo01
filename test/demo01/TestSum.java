@@ -15,8 +15,15 @@ public class TestSum {
 	public void testSumANumberAndZero() {
 		assertEquals(6, sum(6,0));
 		assertEquals(6, sum(0,6));
-
 	}
+	
+	@Test
+	public void testSumNegativeNumbers() {
+		assertEquals(5, sum(8, -3));
+		assertEquals(-7, sum(-2, -5));
+		
+	}
+	
 
 	private int sum(int i, int j) {
 		return i+j;
