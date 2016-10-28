@@ -24,7 +24,12 @@ public class TestSum {
 		
 	}
 	
+	@Test
+	public void testSumTresNumeros() {
+		assertEquals(12, Sum.sum(8, 1, 3));
+	}
 
+	
 	private int sum(int i, int j) {
 		return Sum.sum(i,  j);
 	}
