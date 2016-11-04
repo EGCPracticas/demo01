@@ -2,11 +2,12 @@ package demo01;
 
 public class Sum {
 
-	public static int sum(int i, int j) {
-		return i+j;
+	public static int sum(int... nums) {
+		int sum = 0;
+		for (Integer a: nums) {
+			sum += a;
+		}
+		return sum;
 	}
 
-	public static Object sum(int i, int j, int k) {
-		return sum(sum(i, j), k);
-	}
 }
